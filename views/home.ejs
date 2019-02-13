@@ -1,15 +1,17 @@
 <%- include("partials/header"); -%>
 
 <%  posts.forEach(function(post){ %>
+<div class="single-post">
 
-<h3>
-  <%=post.title%>
-</h3>
-<p>
-  <%=post.content.substring(0, 100) + " ..."%>
-  <a href="/posts/<%=post._id%>">Read More</a>
-</p>
+  <h3>
+    <%=post.title%>
+  </h3>
+  <p>
+    <%=post.content.substring(0, 200) + " ..."%>
+    <a href="/posts/<%=post._id%>" class="btn btn-outline-info btn-read">Read More</a>
+  </p>
 
+</div>
 
 <% }) %>
 

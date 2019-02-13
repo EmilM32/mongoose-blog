@@ -1,3 +1,21 @@
 .home-content {
   margin: 1rem;
 }
+.single-post {
+  border: 1px dotted #eaeaea;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.btn-read {
+  float: right;
+  margin-top: 1rem;
+}
+footer {
+  width: 100%;
+  background-color: #90b8f8;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+}
