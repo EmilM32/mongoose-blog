@@ -57,11 +57,17 @@ app.post("/add", function(req, res) {
     content: req.body.postBody
   });
 
-  post.save(function(err) {
-    if (!err) {
-      res.redirect("/");
-    }
-  });
+  const adminKey = req.body.adminKey;
+
+  if(adminKey === "123") {
+    post.save(function(err) {
+      if (!err) {
+        res.redirect("/");
+      }
+    });
+  } else {
+    res.redirect("/add");
+  }
 });
 
 app.get("/posts/:postId", function(req, res){
