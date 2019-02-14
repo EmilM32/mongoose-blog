@@ -10,7 +10,7 @@ const content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 
 const app = express();
 // mongoose.connect("mongodb://localhost:27017/blogNew", {useNewUrlParser: true});
-mongoose.connect("mongodb+srv://admin-emil:Neurotransgresja32@cluster0-748gv.mongodb.net/blogNew", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin-emil:[password]@cluster0-748gv.mongodb.net/blogNew", {useNewUrlParser: true});
 
 
 app.set('view engine', 'ejs');
